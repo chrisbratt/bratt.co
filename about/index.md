@@ -7,4 +7,10 @@ eleventyNavigation:
   order: 3
 ---
 
-I am a person that writes stuff.
+15 years experience designing digital products. I start by fully understanding the problem and opportunity to design solutions that focus on usability, functionality and simplicity whilst representing brand identity and tone of voice.
+
+I'm currently working as Lead Product Designer at giffgaff.
+
+After graduating from Portsmouth University with a degree in Interactive Media Design I freelanced in web design and video production. I regularly filmed and edited videos of nightclub events and in 2009 filmed Pete Tong backstage at Creamfields.
+
+I'm a husband and a dad. My main interests include photography, film, music and football. I enjoy filmmaking and have directed three short films and a music video for a local band.
