@@ -1,14 +1,16 @@
 ---
 layout: layouts/home.njk
 eleventyNavigation:
-  key: Home
-  order: 1
+key: Home
+order: 1
 ---
 
-{% set maxPosts = collections.posts.length | min(3) %}
-<h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
+<h2>{{ content.elevator }}</h2>
 
-{% set postslist = collections.posts | head(-3) %}
+{% set maxPosts = collections.posts.length | min(3) %}
+<h1>Featured work</h1>
+
+{% set postslist = collections.posts | head(-5) %}
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist.njk" %}
 
