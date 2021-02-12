@@ -23,6 +23,10 @@ Create a simplified, lovable and complete Wish List experience that supports the
 
 The ultimate goal was to achieve feature parity. The two main constraints that we had were time (we didn't have much) and technology (limited scope to change the backend). With that in mind we began by understanding how the current Wish List worked, from both a user experience and technology point of view.
 
+{% image "./img/john-lewis-wish-list-screenshot-atg.png", "Screenshot of the existing Wish List" %}
+
+{% image "./img/about-photo-1.jpg", "Test" %}
+
 ### User flows
 
 Using OmniGraffle I put together user flows to visualise how the current Wish List worked.
