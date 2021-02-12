@@ -11,7 +11,7 @@ Main responsibilities included research, UI design, architecture and guidance co
 
 ## The challenge
 
-In 2013 graze.com moved to a responsive website that used Bootstrap with custom overrides. Since then additional styles had been regularly added without any formal process, sometimes for individual use. Within two years the framework had become bloated and style patterns across the website were inconsistent which resulted in a poor user experience.
+In 2013 <a href="//graze.com">graze.com</a> moved to a responsive website that used Bootstrap with custom overrides. Since then additional styles had been regularly added without any formal process, sometimes for individual use. Within two years the framework had become bloated and style patterns across the website were inconsistent which resulted in a poor user experience.
 
 ## The goal
 
@@ -21,21 +21,29 @@ Create a style guide to establish a common language, enforce a more sequential w
 
 ### Research
 
-I did some research to find leading examples of style guides. The three that we were most inspired by were Lonely Planet, MailChimp and Gov UK. We also read a lot about Brad Frost's Atomic Design methodology, which certainly influenced our approach.
+I did some research to find leading examples of style guides. The three that we were most inspired by were <a href="//rizzo.lonelyplanet.com/styleguide/design-elements/colours">Lonely Planet</a>, <a href="//ux.mailchimp.com/patterns">MailChimp</a> and <a href="//www.gov.uk/service-manual/design">Gov UK</a>. We also read a lot about Brad Frost's <a href="//bradfrost.com/blog/post/atomic-web-design/">Atomic Design</a> methodology, which certainly influenced our approach.
 
 ### The audit
 
 I performed an audit of the website, which included taking screenshots of each page and specific elements, printing them out and putting them up for the front end team to look at. We also performed some online tests which included a colour palette test.
 
-Small sample of the styles printed out and grouped
+<figure>
+{% imageTest "./img/pistachio-styles-audit.jpg", "Small sample of the styles printed out and grouped", "1200" %}
+<figcaption>Small sample of the styles printed out and grouped</figcaption>
+</figure>
 
 From the audit we discovered that:
 
-The site had inconsistencies, even on individual pages.
-We had over 200 colours including 30 shades of grey alone (some imperceptible for most users).
-We were using seven different button styles.
-Single pages had as many as 10 different fonts styles.
-30 shades of grey
+* The site had inconsistencies, even on individual pages.
+* We had over 200 colours including 30 shades of grey alone (some imperceptible for most users).
+* We were using seven different button styles.
+* Single pages had as many as 10 different fonts styles.
+* 30 shades of grey
+
+<figure>
+{% imageTest "./img/30-shades-of-grey.png", "30 Shades of Grey", "1200" %}
+<figcaption>30 Shades of Grey</figcaption>
+</figure>
 
 Together with the front end developers we went through the various screenshots voting whether to keep, drop or redesign. We put together a list of simple items that we knew we needed which included alerts, buttons, form elements, typography and colour palette.
 
@@ -81,5 +89,9 @@ Over the course of four months more items were added, as long as the team believ
 ## The outcome
 
 The end product was Pistachio - a living style guide and custom-built CSS front end framework.
+
+<figure>
+{% imageTest "./img/portfolio-graze-living-styleguide-responsive.jpg", "Screenshots showing Pistachio on desktop and mobile", "1200" %}
+</figure>
 
 <a href="https://pistachio.graze.com">Visit website</a>

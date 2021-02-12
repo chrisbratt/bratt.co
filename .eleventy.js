@@ -7,9 +7,9 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const Image = require("@11ty/eleventy-img");
 
-async function imageShortcode(src, alt, sizes) {
+async function imageTestShortcode(src, alt, sizes) {
   let metadata = await Image(src, {
-    widths: [600, 1200],
+    widths: [900, 1200, 2000],
     formats: ["webp", "jpeg"]
   });
 
@@ -31,9 +31,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
 
-  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
-  eleventyConfig.addLiquidShortcode("image", imageShortcode);
-  eleventyConfig.addJavaScriptFunction("image", imageShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode("imageTest", imageTestShortcode);
+  eleventyConfig.addLiquidShortcode("imageTest", imageTestShortcode);
+  eleventyConfig.addJavaScriptFunction("imageTest", imageTestShortcode);
 
   eleventyConfig.setDataDeepMerge(true);
 

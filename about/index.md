@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 3
 ---
 
-15 years experience designing digital products. I start by fully understanding the problem and opportunity to design solutions that focus on usability, functionality and simplicity whilst representing brand identity and tone of voice.
+15 years experience designing digital products. {{ content.elevator }}.
 
 I'm currently working as Lead Product Designer at giffgaff.
 

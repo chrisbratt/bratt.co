@@ -11,4 +11,13 @@ I was solely responsible for the design and development of the website from conc
 
 ## The outcome
 
+<figure>
+{% imageTest "./img/portfolio-puglife-responsive.jpg", "PugLife! responsive design", "1200" %}
+<figcaption>PugLife! responsive design</figcaption>
+</figure>
+
 The website is built on the WordPress CMS platform and uses the WooCommerce plugin with payments via PayPal. It is responsive and optimised for mobile users.
+
+<figure>
+{% imageTest "./img/portfolio-puglife-basket-journey-mobile.jpg", "", "1200" %}
+</figure>
