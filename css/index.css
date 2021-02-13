@@ -33,6 +33,7 @@ p {
 h1,
 h2,
 h3 {
+  color: var(--navy);
   font-family: var(--font-heading);
   font-weight: 400;
   padding-bottom: .5em;
