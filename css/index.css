@@ -3,7 +3,7 @@
 :root {
   --font-base: 'Work Sans', sans-serif;
   --font-heading: 'Abril Fatface', serif;
-  --red: #C5004A;
+  --red: red;
   --darkred: #7F0036;
   --lightgrey: #f2f2f2;
   --grey: #C0C0C0;
@@ -33,7 +33,7 @@ p {
 h1,
 h2,
 h3 {
-  color: var(--blue);
+  color: var(--red);
   font-family: var(--font-heading);
   font-weight: 400;
   padding-bottom: .5em;
