@@ -24,7 +24,7 @@ Create a simplified, lovable and complete Wish List experience that supports the
 The ultimate goal was to achieve feature parity. The two main constraints that we had were time (we didn't have much) and technology (limited scope to change the backend). With that in mind we began by understanding how the current Wish List worked, from both a user experience and technology point of view.
 
 <figure>
-{% imageTest "./img/john-lewis-wish-list-screenshot-atg.png", "Wish List on the old desktop website", "1200" %}
+{% imageTest "./img/john-lewis-wish-list-screenshot-atg.png", "Wish List on the old desktop website" %}
 <figcaption>Wish List on the old desktop website</figcaption>
 </figure>
 
@@ -33,7 +33,7 @@ The ultimate goal was to achieve feature parity. The two main constraints that w
 Using OmniGraffle I put together user flows to visualise how the current Wish List worked.
 
 <figure>
-{% imageTest "./img/john-lewis-wish-list-user-flow-atg.png", "User flows of existing Wish List", "1200" %}
+{% imageTest "./img/john-lewis-wish-list-user-flow-atg.png", "User flows of existing Wish List" %}
 <figcaption>User flows of existing Wish List</figcaption>
 </figure>
 
@@ -86,14 +86,14 @@ The third goal was to allow customers to start adding and removing items from th
 From then on we started implementing the remaining features including stock status, add to basket, create Wish List, rename Wish List and delete Wish Lists.
 
 <figure>
-{% imageTest "./img/john-lewis-wish-list-team-wall.jpg", "The team's wall", "1200" %}
+{% imageTest "./img/john-lewis-wish-list-team-wall.jpg", "The team's wall" %}
 <figcaption>The team's wall</figcaption>
 </figure>
 
 ### Design
 
 <figure>
-{% imageTest "./img/john-lewis-wish-list-designs-sketch.jpg", "John Lewis Wish List designs in Sketch", "1200" %}
+{% imageTest "./img/john-lewis-wish-list-designs-sketch.jpg", "John Lewis Wish List designs in Sketch" %}
 <figcaption>John Lewis Wish List designs in Sketch</figcaption>
 </figure>
 
@@ -106,6 +106,6 @@ Of those customers using the new Wish List we saw a significant increase in the 
 <a href="//account.johnlewis.com/wish-list">Visit website</a>
 
 <figure>
-{% imageTest "./img/john-lewis-wish-list-1jl-iphone-x.jpg", "John Lewis Wish List on an iPhone X", "1200" %}
+{% imageTest "./img/john-lewis-wish-list-1jl-iphone-x.jpg", "John Lewis Wish List on an iPhone X" %}
 <figcaption>John Lewis Wish List on an iPhone X</figcaption>
 </figure>

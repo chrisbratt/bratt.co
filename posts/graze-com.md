@@ -7,7 +7,7 @@ layout: layouts/post.njk
 ---
 ## The challenge
 
-Since launching in 2008 graze.com has solely been a subscription service delivering a box of 4 snacks to it's customers. In 2015 a more standard ecommerce shop was launched which uses Magento 2. The customer experience was disjointed and ultimately confusing.
+Since launching in 2008 graze.com had solely been a subscription service delivering a box of 4 snacks to it's customers. In 2015 they launched an online shop that allowed customers to buy snacks without the need for a subscription. The customer experience, however, was disjointed and ultimately confusing.
 
 ## The goal
 

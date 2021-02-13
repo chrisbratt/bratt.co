@@ -1,45 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface:wght@400&family=Work+Sans:wght@300;500&display=swap');
+
 :root {
+  --font-base: 'Work Sans', sans-serif;
+  --font-heading: 'Abril Fatface', serif;
   --red: #C5004A;
   --darkred: #7F0036;
-  --lightgrey: #e0e0e0;
+  --lightgrey: #f2f2f2;
   --grey: #C0C0C0;
   --darkgrey: #333;
   --navy: #17050F;
   --blue: #082840;
   --white: #fff;
 }
+
 * {
   box-sizing: border-box;
 }
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: system-ui, sans-serif;
+  background-color: var(--lightgrey);
   color: var(--darkgrey);
-  background-color: var(--white);
+  font-family: var(--font-base);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
 }
-p:last-child {
-  margin-bottom: 0;
+p {
+  padding-bottom: 1em;
 }
-p,
-.-post li,
-p,
-.-post li {
-  line-height: 1.45;
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  padding-bottom: .5em;
+  line-height: 1em;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 1.75em;
+}
+h3 {
+  font-size: 1.25em;
+}
+ul {
+  margin-bottom: .5em;
 }
 img {
   max-width: 100%;
   height: auto;
 }
 figure {
-  margin: 0;
+  margin: 0 0 1.5em;
+}
+figcaption {
+  background: var(--darkgrey);
+  color: var(--white);
+  display: inline-block;
+  font-size: .75em;
+  line-height: 1em;
+  padding: 4px 8px;
 }
 a[href] {
   color: var(--blue);
-}
-a[href]:visited {
-  color: var(--navy);
+  font-weight: 500;
 }
 header,
 main {
@@ -60,7 +88,6 @@ table td,
 table th {
   padding-right: 1em;
 }
-
 pre,
 code {
   font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
@@ -172,8 +199,26 @@ nav {
   font-weight: bold;
 }
 .brattco-home .postlist-link {
-  font-size: 1.1875em; /* 19px /16 */
-  font-weight: 700;
+  font-size: 1.5em;
+}
+
+/* Post */
+.brattco-post {
+  overflow: hidden;
+}
+.brattco-post .container {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+}
+.brattco-post .container figure {
+  max-width: 1000px;
+  width: 100%;
+}
+.brattco-post .container figure img {
+  margin-left: -20%;
+  max-width: 1200px;
+  width: 140%;
 }
 
 
@@ -226,4 +271,11 @@ a[href].direct-link:focus:visited,
 .container {
   max-width: 1300px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 900px) {
+  body,
+  html {
+    font-size: 1.2em;
+  }
 }
