@@ -5,7 +5,8 @@ eleventyNavigation:
   order: 1
 ---
 
-<h2>{{ content.elevator }}</h2>
+<h2>{{ content.headline }}</h2>
+<p class="bump">{{ content.elevator }}</p>
 
 {% set maxPosts = collections.posts.length | min(3) %}
 <h1>Featured work</h1>
