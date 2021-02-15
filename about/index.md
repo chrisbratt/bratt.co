@@ -7,7 +7,9 @@ eleventyNavigation:
   order: 3
 ---
 
-15 years experience designing digital products. {{ content.elevator }}.
+<h1>Hi, I'm<br>{{ metadata.name }}</h1>
+
+<p class="bump">15 years experience designing digital products. {{ content.elevator }}.</p>
 
 I'm currently working as Lead Product Designer at giffgaff.
 
