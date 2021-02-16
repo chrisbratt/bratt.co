@@ -4,6 +4,7 @@ description: "A responsive wish list for johnlewis.com"
 date: 2018-05-17
 tags: ['UX Design', 'UI Design']
 layout: layouts/post.njk
+cardimage: john-lewis-shop-sign.jpg
 ---
 ## My role
 

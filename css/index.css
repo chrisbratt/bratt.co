@@ -25,12 +25,13 @@ body {
   padding: 0;
 }
 p {
-  padding-bottom: 1em;
-  max-width: 36em;
+  padding: 0;
+  margin: 0 0 1em;
+  max-width: 32em;
 }
 p.bump {
-  font-size: 1.4em;
-  line-height: 1.4em;
+  font-size: 1.6em;
+  line-height: 1.6em;
 }
 h1,
 h2,
@@ -38,21 +39,29 @@ h3 {
   color: var(--color-darkgrey);
   font-family: var(--font-heading);
   font-weight: 400;
-  line-height: 1.2em;
-  padding-bottom: .5em;
+  line-height: 1.6em;
+  padding-bottom: .4em;
   max-width: 20em;
 }
 h1 {
-  font-size: 1.8em;
+  font-size: 2em;
 }
 h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 h3 {
-  font-size: 1.1em;
+  font-size: 1.25em;
 }
 ul {
   margin-bottom: .5em;
+}
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.margin-reset {
+  margin: 0;
 }
 img {
   max-width: 100%;
@@ -119,15 +128,13 @@ pre {
 .highlight-line {
   display: block;
   padding: 0.125em 1em;
-  text-decoration: none; /* override del, ins, mark defaults */
-  color: inherit; /* override del, ins, mark defaults */
+  text-decoration: none;
+  color: inherit;
 }
 
-/* allow highlighting empty lines */
 .highlight-line:empty:before {
   content: " ";
 }
-/* avoid double line breaks when using display: block; */
 .highlight-line + br {
   display: none;
 }
@@ -188,27 +195,44 @@ nav {
 }
 
 /* Posts list */
-.postlist {
+ul.postlist {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   list-style: none;
-  padding: 0;
+  margin-left: -1em;
+  margin-right: -1em;
 }
-.postlist-date,
-.postlist-item:before {
-  font-size: 0.8125em; /* 13px /16 */
-  color: var(--darkgrey);
+ul.postlist li.postlist-item-card {
+  background: #fff;
+  display: flex;
+  margin: 1em;
+  overflow: hidden;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
-.postlist-date {
-  word-spacing: -0.5px;
+ul.postlist li.postlist-item-card a {
+  background: var(--color-white);
+  color: initial;
+  display: flex;
+  flex: auto;
+  font-weight: initial;
+  text-decoration: none;
 }
-.postlist-link {
-  display: inline-block;
-  padding: 0.25em 0;
+ul.postlist li.postlist-item-card .postlist-item-content {
+  display: flex;
+  flex-direction: column;
 }
-.postlist-item-active .postlist-link {
-  font-weight: bold;
+ul.postlist li.postlist-item-card .postlist-item-content img {
+  margin-bottom: 1em;
 }
-.brattco-home .postlist-link {
-  font-size: 1.5em;
+ul.postlist li.postlist-item-card .postlist-item-content .postlist-item-title,
+ul.postlist li.postlist-item-card .postlist-item-content .postlist-item-description,
+ul.postlist li.postlist-item-card .postlist-item-content .postlist-item-tags {
+  display: block;
+  padding: 1em 1em 0;
+}
+ul.postlist li.postlist-item-card .postlist-item-content .postlist-item-tags {
+  margin-top: auto;
 }
 
 /* Post */
@@ -229,7 +253,6 @@ nav {
   max-width: 1200px;
   width: 140%;
 }
-
 
 /* Tags */
 .post-tag {
@@ -287,5 +310,16 @@ a[href].direct-link:focus:visited,
   body,
   html {
     font-size: 1.2em;
+  }
+  ul.postlist {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  ul.postlist {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
   }
 }

@@ -4,6 +4,7 @@ description: "Front end framework and design system for graze.com"
 date: 2017-01-05
 tags: ['UI Design', 'Development']
 layout: layouts/post.njk
+cardimage: portfolio-cover-pistachio.png
 ---
 ## My role
 
