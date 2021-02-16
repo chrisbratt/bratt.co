@@ -4,7 +4,7 @@ description: "An e-commerce website selling novelty pug-related gifts"
 date: 2017-01-05
 tags: ['UI Design', 'Development']
 layout: layouts/post.njk
-cardimage: portfolio-cover-puglife.co_.uk_.png
+feature_image: portfolio-cover-puglife.co_.uk_.png
 ---
 ## My role
 

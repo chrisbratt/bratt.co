@@ -33,6 +33,9 @@ p.bump {
   font-size: 1.6em;
   line-height: 1.6em;
 }
+p.small {
+  font-size: .8em;
+}
 h1,
 h2,
 h3 {
@@ -271,6 +274,14 @@ ul.postlist li.postlist-item-card .postlist-item-content .postlist-item-tags {
 a[href].post-tag,
 a[href].post-tag:visited {
   color: #fff;
+}
+
+.tags .tag::after {
+    content: ", ";
+}
+.tags .tag:last-of-type::after {
+    content: "";
+    margin: 0;
 }
 
 /* Warning */
