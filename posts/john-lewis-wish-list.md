@@ -5,6 +5,7 @@ date: 2018-05-17
 tags: ['UX Design', 'UI Design']
 layout: layouts/post.njk
 feature_image: john-lewis-shop-sign.jpg
+banner_image: john-lewis-wish-list-1jl-iphone-x.jpg
 ---
 ## My role
 
@@ -44,23 +45,25 @@ We gathered insights from the data team and held focus groups to understand who 
 
 We discovered early on that Wish List was used by a small percentage of users, however, they were predominantly our Best Customers. We also found out that although customers could create up to 5 Wish Lists, around 90% of those that used the feature only had a single Wish List. We discussed a concept of merging customers' Wish Lists into a single Wish List with the ability to 'tag' items, however, this felt like too much of a departure from the original goal.
 
-* Who?
-  * Best Customers
-  * Great Customers
-  * In-Store Partners
-* Why?
-  * Researching and shortlisting
-  * Shopping for me
-  * Shopping for someone else
-  * Gifting
-* When?
-  * Day to day
-  * Special occasions
-  * Seasonal
-  * Bargain hunting
-  * Gift list
-  * In-store services (e.g. Personal Styling)
-  * Out of stock items
+#### Who?
+* Best Customers
+* Great Customers
+* In-Store Partners
+
+#### Why?
+* Researching and shortlisting
+* Shopping for me
+* Shopping for someone else
+* Gifting
+
+#### When?
+* Day to day
+* Special occasions
+* Seasonal
+* Bargain hunting
+* Gift list
+* In-store services (e.g. Personal Styling)
+* Out of stock items
 
 ### Customer feedback
 

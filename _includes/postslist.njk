@@ -3,7 +3,7 @@
   <li class="postlist-item-card">
     <a href="{{ post.url | url }}">
       <div class="postlist-item-content">
-        {% if post.data.feature_image %}<img src="../img/{{ post.data.feature_image }}">{% endif %}
+        {% if post.data.feature_image %}<img src="../img/{{ post.data.feature_image }}" alt="{% if post.data.title %}{{ post.data.title }}{% endif %}">{% endif %}
         <div class="postlist-item-title">
           <h3 class="margin-reset">
             {% if post.data.title %}{{ post.data.title }}{% endif %}

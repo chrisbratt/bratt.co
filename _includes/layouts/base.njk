@@ -11,7 +11,7 @@
   </head>
   <body>
 
-    <header>
+    <header id="masthead">
       <div class="container">
         <a href="{{ '/' | url }}" class="logo">{{ metadata.name }}</a>
         <nav>
@@ -25,9 +25,7 @@
     </header>
 
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-      <div class="container">
-        {{ content | safe }}
-      </div>
+      {{ content | safe }}
     </main>
 
     <footer></footer>

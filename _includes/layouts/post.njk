@@ -2,10 +2,43 @@
 layout: layouts/base.njk
 templateClass: brattco-post
 ---
+<div style="
+  position:relative;
+  height:480px;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#222;
+  margin:0 -1em;">
+  <img src="/img/{{ banner_image }}" alt="" style="
+    opacity:0.2;
+    position:absolute;
+    left:0;
+    top:0;
+    object-fit:cover;
+    min-height:120%;
+    min-width:120%;
+    left:-20%;
+    pointer-events:none;" id="work-banner-image"/>
+  <div style="
+    color:white;
+    position:relative;
+    z-index:1;
+    display:block;
+    z-index:1000;
+    margin:3em auto;
+    max-width:300px;
+    text-align:center;" id="work-banner-title">
+    <h1 style="color:white">{{ title }}</h1>
+    <p class="bump" style="color:white">{{ description }}</p>
+    <p class="margin-reset">{{ tags }}</p>
+  </div>
+</div>
 
-<h1>{{ title }}</h1>
-
-{{ content | safe }}
+<div class="container" id="work-content" style="padding-top:2em;">
+  {{ content | safe }}
+</div>
 
 <ul>
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
@@ -13,3 +46,16 @@ templateClass: brattco-post
   {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
   {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
 </ul>
+
+<script type="text/javascript">
+	let bg = document.getElementById("work-banner-image");
+	let title = document.getElementById("work-banner-title");
+	let content = document.getElementById("work-content");
+
+	window.addEventListener('scroll', function(){
+		var value = window.scrollY;
+
+		bg.style.top = value * -0.1 + 'px';
+		title.style.top = value * -0.2 + 'px';
+	})
+</script>

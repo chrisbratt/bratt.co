@@ -5,6 +5,7 @@ date: 2017-01-05
 tags: ['UI Design', 'Development']
 layout: layouts/post.njk
 feature_image: portfolio-cover-puglife.co_.uk_.png
+banner_image: portfolio-puglife-mobile-lifestyle.jpg
 ---
 ## My role
 
