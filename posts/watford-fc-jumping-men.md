@@ -16,4 +16,4 @@ A petition was started to bring the famous 80's 'Jumping Men' animation back to 
 
 ## The outcome
 
-<div style="padding:46% 0 0 0;position:relative;max-width:900px;"><iframe src="https://player.vimeo.com/video/157342169?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:56% 0 0 0;position:relative;max-width:100%;"><iframe src="https://player.vimeo.com/video/157342169?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
