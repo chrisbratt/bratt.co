@@ -273,11 +273,6 @@ ul.postlist li.postlist-item-card .postlist-item-content .postlist-item-tags {
   max-width: 1000px;
   width: 100%;
 }
-.brattco-post .container figure img {
-  margin-left: -20%;
-  max-width: 1200px;
-  width: 140%;
-}
 
 /* Tags */
 .post-tag {
@@ -350,6 +345,11 @@ main {
   ul.postlist {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+  }
+  .brattco-post .container figure img {
+    margin-left: -20%;
+    max-width: 1200px;
+    width: 140%;
   }
 }
 
