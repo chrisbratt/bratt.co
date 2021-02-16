@@ -1,5 +1,5 @@
 ---
-title: "John S Lewis Wish List"
+title: "John Lewis Wish List"
 description: "A responsive wish list for johnlewis.com"
 date: 2018-05-17
 tags: ['UX Design', 'UI Design']
