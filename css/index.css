@@ -209,8 +209,11 @@ ul:not([class]) li:before {
   margin-left: -16px;
 }
 
+.pie-chart {
+  margin-bottom: 2em !important;
+}
 .pie-chart h2 {
-  font-size: .8em;
+  font-size: .8em !important;
 }
 .pie-chart cite {
   padding-bottom: .1em !important;
@@ -277,7 +280,6 @@ ul.postlist li.postlist-item-card {
   overflow: hidden;
   -webkit-transition: all .5s;
   transition: all .5s;
-  padding-bottom: 1em;
 }
 ul.postlist li.postlist-item-card a {
   background: var(--color-white);
@@ -286,6 +288,7 @@ ul.postlist li.postlist-item-card a {
   flex: auto;
   font-weight: initial;
   text-decoration: none;
+  padding-bottom: 1em;
 }
 ul.postlist li.postlist-item-card .postlist-item-content {
   display: flex;
