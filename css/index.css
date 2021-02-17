@@ -337,7 +337,7 @@ main {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 480px) {
   ul.postlist {
     grid-template-columns: repeat(2,1fr);
   }
