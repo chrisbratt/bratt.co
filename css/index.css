@@ -265,6 +265,24 @@ nav ul.nav .nav-item-active {
   text-decoration: underline;
 }
 
+/* Footer */
+footer {
+  background: var(--color-white);
+  float: left;
+  margin-top: 1em;
+  padding: 0 16px;
+  width: 100%;
+}
+footer div {
+  margin: 1em 0;
+}
+footer .social {
+  float:left;
+}
+footer .copyright {
+  float: right;
+}
+
 /* Posts list */
 ul.postlist {
   display: grid;
@@ -440,7 +458,8 @@ main {
     font-size: 1.2em;
   }
   main,
-  header#masthead {
+  header#masthead,
+  footer {
     padding: 0 32px;
   }
   .brattco-post .post-banner-container {
