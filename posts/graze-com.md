@@ -1,11 +1,12 @@
 ---
-title: "Graze.com"
+title: "graze.com"
 description: "A redesign of the entire online experience for graze.com"
 date: 2017-01-05
 tags: ['UX Design', 'UI Design']
 layout: layouts/post.njk
 feature_image: portfolio-cover-graze-com.jpg
 banner_image: banner-image-graze-com.jpg
+theme_color: ""
 ---
 ## The challenge
 

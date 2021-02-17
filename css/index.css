@@ -320,6 +320,43 @@ ul.postlist li.postlist-item-card .postlist-item-content .postlist-item-tags {
   max-width: 1000px;
   width: 100%;
 }
+.brattco-post .post-banner-container {
+  position: relative;
+  overflow: hidden;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-darkgrey);
+  margin: 0 -1em;
+}
+.brattco-post .post-banner-container img {
+  opacity: 0.2;
+  position: absolute;
+  object-fit: cover;
+  min-height: 110%;
+  min-width: 150%;
+  left: -23%;
+  top: 0;
+  pointer-events: none;
+}
+.brattco-post .post-banner-content {
+  color: white;
+  position: relative;
+  z-index: 1;
+  display: block;
+  z-index: 1000;
+  margin: 2em auto;
+  width: 75%;
+  max-width: 600px;
+  text-align: center;
+}
+.brattco-post .post-banner-content h1 {
+  color: white;
+}
+.brattco-post .post-banner-content .post-tags {
+  margin: 2em auto 0;
+}
 
 /* Tags */
 .post-tag {
@@ -390,12 +427,20 @@ main {
   ul.postlist {
     grid-template-columns: repeat(2,1fr);
   }
+  .brattco-post .post-banner-container img {
+    min-height: 120%;
+    min-width: 100%;
+    left: 0;
+  }
 }
 
 @media screen and (min-width: 1000px) {
   body,
   html {
     font-size: 1.2em;
+  }
+  .brattco-post .post-banner-container {
+    height: 480px;
   }
   .brattco-post .container figure img {
     margin-left: -20%;

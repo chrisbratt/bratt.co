@@ -6,6 +6,7 @@ tags: ['UI Design', 'Development']
 layout: layouts/post.njk
 feature_image: portfolio-cover-puglife.co_.uk_.png
 banner_image: portfolio-puglife-mobile-lifestyle.jpg
+theme_color: "#FB6900"
 ---
 ## My role
 

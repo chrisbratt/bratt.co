@@ -6,6 +6,7 @@ tags: ['UI Design', 'Development']
 layout: layouts/post.njk
 feature_image: portfolio-cover-pistachio.png
 banner_image: portfolio-pistachio-lifestyle.jpg
+theme_color: "#41969C"
 ---
 ## My role
 

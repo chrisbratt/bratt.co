@@ -2,38 +2,12 @@
 layout: layouts/base.njk
 templateClass: brattco-post
 ---
-<div style="
-  position:relative;
-  overflow:hidden;
-  height:420px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:#222;
-  margin:0 -1em;">
-  <img src="/img/{{ banner_image }}" alt="" style="
-    opacity:0.2;
-    position:absolute;
-    left:0;
-    top:0;
-    object-fit:cover;
-    min-height:120%;
-    min-width:120%;
-    left:-20%;
-    pointer-events:none;" id="work-banner-image"/>
-  <div style="
-    color:white;
-    position:relative;
-    z-index:1;
-    display:block;
-    z-index:1000;
-    margin:2em auto;
-    width:80%;
-    max-width:600px;
-    text-align:center;" id="work-banner-title">
-    <h1 style="color:white;" class="bump margin-reset">{{ title }}</h1>
-    <p class="bump margin-reset" style="color:white">{{ description }}</p>
-    <p class="margin-reset small" style="margin-top:2em;">{{ tags }}</p>
+<div class="post-banner-container" {% if theme_color %} style="background-color:{{ theme_color }}"{% endif %}>
+  <img src="/img/{{ banner_image }}" alt="" id="work-banner-image"/>
+  <div class="post-banner-content" id="work-banner-title">
+    <h1 class="bump margin-reset">{{ title }}</h1>
+    <p class="bump margin-reset">{{ description }}</p>
+    <p class="margin-reset small post-tags">{{ tags }}</p>
   </div>
 </div>
 

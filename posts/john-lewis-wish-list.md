@@ -6,6 +6,7 @@ tags: ['UX Design', 'UI Design']
 layout: layouts/post.njk
 feature_image: john-lewis-shop-sign.jpg
 banner_image: john-lewis-wish-list-1jl-iphone-x.jpg
+theme_color: "#000"
 ---
 ## My role
 
