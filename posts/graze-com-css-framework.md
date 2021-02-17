@@ -35,7 +35,7 @@ I performed an audit of the website, which included taking screenshots of each p
 <figcaption>Small sample of the styles printed out and grouped</figcaption>
 </figure>
 
-From the audit we discovered that:
+From the audit we discovered:
 
 * The site had inconsistencies, even on individual pages.
 * We had over 200 colours including 30 shades of grey alone (some imperceptible for most users).

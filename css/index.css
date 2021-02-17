@@ -26,7 +26,6 @@ body {
   padding: 0;
 }
 p {
-  display: inline-block;
   padding: 0;
   margin: 0 0 2em;
   max-width: 35em;
@@ -40,11 +39,8 @@ p.small {
 }
 h1,
 h2,
-h3,
-h4,
-h5 {
+h3 {
   color: var(--color-darkgrey);
-  display: inline-block;
   font-family: var(--font-heading);
   font-weight: 400;
   line-height: 1.6em;
@@ -69,12 +65,12 @@ h4 {
   font-size: 1em;
   font-weight: bold;
   padding-bottom: 0;
-  margin: 0 0 .75em;
+  margin: 0 0 .8em;
 }
 h5,
 cite,
 small {
-  font-size: .75em;
+  font-size: .8em;
   color: var(--color-grey);
   margin: 0 0 .5em;
 }
@@ -82,16 +78,24 @@ img {
   max-width: 100%;
   height: auto;
 }
+picture {
+  display: block;
+  line-height: 0;
+}
 figure {
   margin: 0 0 1.5em;
+  line-height: 0;
+  position: relative;
 }
 figcaption {
-  background: var(--color-darkgrey);
+  background-color: rgba(0,0,0,0.8);
   color: var(--color-white);
   display: inline-block;
-  font-size: .75em;
+  font-size: .8em;
   line-height: 1em;
   padding: 4px 8px;
+  position: absolute;
+  bottom: 0;
 }
 a[href] {
   color: var(--color-accent);
@@ -222,7 +226,7 @@ ul:not([class]) li:before {
   font-size: .8em !important;
 }
 .pie-chart cite {
-  padding-bottom: .1em !important;
+  padding-bottom: .5em !important;
 }
 
 /* Header */
@@ -278,6 +282,9 @@ footer {
   padding: 32px 16px;
   text-align: center;
   width: 100%;
+}
+footer * {
+  max-width: none;
 }
 footer div div {
   margin: 1.5em auto;
@@ -479,9 +486,9 @@ main {
     margin: 0 -32px;
   }
   .brattco-post .container figure img {
-    margin-left: -20%;
-    max-width: 1200px;
-    width: 140%;
+    margin-left: -31.25%;
+    max-width: 1300px;
+    width: 162.5%;
   }
   ul.postlist {
     grid-template-columns: repeat(3,1fr);
