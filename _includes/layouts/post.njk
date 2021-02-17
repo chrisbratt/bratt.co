@@ -31,13 +31,13 @@ templateClass: brattco-post
     width:80%;
     max-width:600px;
     text-align:center;" id="work-banner-title">
-    <h1 style="color:white;margin-top:0;">{{ title }}</h1>
-    <p class="bump" style="color:white">{{ description }}</p>
-    <p class="margin-reset">{{ tags }}</p>
+    <h1 style="color:white;" class="bump margin-reset">{{ title }}</h1>
+    <p class="bump margin-reset" style="color:white">{{ description }}</p>
+    <p class="margin-reset small" style="margin-top:2em;">{{ tags }}</p>
   </div>
 </div>
 
-<div class="container" id="work-content" style="padding-top:2em;">
+<div class="container page-content" id="work-content">
   {{ content | safe }}
 </div>
 

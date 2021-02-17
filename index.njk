@@ -11,7 +11,7 @@ eleventyNavigation:
 {% set maxPosts = collections.posts.length | min(3) %}
 <h2>Featured work</h2>
 
-{% set postslist = collections.posts | head(-5) %}
+{% set postslist = collections.posts | head(-3) %}
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist.njk" %}
 

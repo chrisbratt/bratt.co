@@ -6,7 +6,7 @@ eleventyNavigation:
   key: About Me
   order: 3
 ---
-<div class="container">
+<div class="container page-content">
 <h1>Hi, I'm<br>{{ metadata.name }}</h1>
 
 <p class="bump">15 years experience designing digital products. {{ content.elevator }}.</p>

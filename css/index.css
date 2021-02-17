@@ -5,7 +5,7 @@
   --font-heading: 'Krona One', sans-serif;
   --color-white: #fff;
   --color-grey: #777;
-  --color-lightgrey: #CCC;
+  --color-lightgrey: #DDD;
   --color-darkgrey: #222;
   --color-tint: #f2f2f2;
   --color-accent: #b55e95;
@@ -49,11 +49,14 @@ h5 {
   max-width: 20em;
 }
 h1 {
-  font-size: 2em;
+  font-size: 1.6em;
   margin: 0 0 1em;
 }
+h1.bump {
+  font-size: 2em;
+}
 h2 {
-  font-size: 1.6em;
+  font-size: 1.2em;
   margin: 0 0 1em;
 }
 h3 {
@@ -91,12 +94,6 @@ figcaption {
 a[href] {
   color: var(--color-accent);
   font-weight: 500;
-}
-header#masthead {
-  padding: 1em;
-}
-main:first-child {
-  margin-top: 0;
 }
 header:after {
   content: "";
@@ -220,8 +217,9 @@ ul:not([class]) li:before {
 }
 
 /* Header */
-header {
+header#masthead {
   background-color: var(--color-lightgrey);
+  padding: 0 16px;
 }
 
 /* Logo */
@@ -236,23 +234,30 @@ header {
   font-weight: 400;
   text-decoration: none;
   line-height: 1.4em;
+  margin: 16px 32px 8px 0;
 }
 
 /* Nav */
-.nav {
+nav {
   display: inline-block;
+}
+nav ul.nav {
   list-style: none;
-  margin: 0;
+  margin: 0 -16px 8px;
   padding: 0;
 }
-.nav .nav-item {
+nav ul.nav .nav-item {
   display: inline-block;
-  margin-right: 1em;
+  margin: 0 8px;
 }
-.nav .nav-item a[href]:not(:hover) {
+nav ul.nav .nav-item a {
+  padding: 8px;
+  display: inline-block;
+}
+nav ul.nav .nav-item a[href]:not(:hover) {
   text-decoration: none;
 }
-.nav .nav-item-active {
+nav ul.nav .nav-item-active {
   font-weight: 700;
   text-decoration: underline;
 }
@@ -272,6 +277,7 @@ ul.postlist li.postlist-item-card {
   overflow: hidden;
   -webkit-transition: all .5s;
   transition: all .5s;
+  padding-bottom: 1em;
 }
 ul.postlist li.postlist-item-card a {
   background: var(--color-white);
@@ -317,7 +323,6 @@ ul.postlist li.postlist-item-card .postlist-item-content .postlist-item-tags {
   display: inline-block;
   vertical-align: text-top;
   text-transform: uppercase;
-  font-size: 0.5em;
   line-height: 1em;
   padding: 8px;
   margin-left: 8px;
@@ -368,11 +373,14 @@ a[href].direct-link:focus:visited,
 
 /* Structure */
 main {
-  padding: 0 1em;
+  padding: 0 16px;
 }
 .container {
   max-width: 1300px;
   margin: 0 auto;
+}
+.page-content {
+  padding-top: 32px;
 }
 
 @media screen and (min-width: 480px) {
