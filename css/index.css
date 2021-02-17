@@ -4,9 +4,10 @@
   --font-base: 'Work Sans', sans-serif;
   --font-heading: 'Krona One', sans-serif;
   --color-white: #fff;
-  --color-grey: #C0C0C0;
-  --color-lightgrey: #f2f2f2;
+  --color-grey: #777;
+  --color-lightgrey: #CCC;
   --color-darkgrey: #222;
+  --color-tint: #f2f2f2;
   --color-accent: #b55e95;
 }
 
@@ -15,7 +16,7 @@
 }
 html,
 body {
-  background-color: var(--color-lightgrey);
+  background-color: var(--color-tint);
   color: var(--color-darkgrey);
   font-family: var(--font-base);
   font-size: 16px;
@@ -26,7 +27,7 @@ body {
 }
 p {
   padding: 0;
-  margin: 1.2em 0;
+  margin: 0 0 2em;
   max-width: 32em;
 }
 p.bump {
@@ -38,39 +39,39 @@ p.small {
 }
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   color: var(--color-darkgrey);
   font-family: var(--font-heading);
   font-weight: 400;
   line-height: 1.6em;
-  margin: 0 0 .5em;
   max-width: 20em;
 }
 h1 {
   font-size: 2em;
+  margin: 0 0 1em;
 }
 h2 {
   font-size: 1.6em;
+  margin: 0 0 1em;
 }
 h3 {
   font-size: 1em;
+  margin: 0 0 1em;
 }
 h4 {
   font-size: 1em;
   font-weight: bold;
-  margin: 1.6em 0 0;
   padding-bottom: 0;
+  margin: 0 0 .75em;
 }
-ul {
-  margin-bottom: .5em;
-}
-.list-reset {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.margin-reset {
-  margin: 0;
+h5,
+cite,
+small {
+  font-size: .75em;
+  color: var(--color-grey);
+  margin: 0 0 .5em;
 }
 img {
   max-width: 100%;
@@ -133,6 +134,26 @@ pre {
   margin: .5em 0;
   background-color: #f6f6f6;
 }
+blockquote {
+  position: relative;
+  font-style: italic;
+}
+blockquote p:before,
+blockquote p:after {
+  color: var(--color-lightgrey);
+  font-size: 3em;
+  font-style: normal;
+  line-height: 1em;
+  position: absolute;
+}
+blockquote p:before {
+  content: open-quote;
+  margin-left: -32px;
+}
+blockquote p:after {
+  content: close-quote;
+  margin-left: 8px;
+}
 .highlight-line {
   display: block;
   padding: 0.125em 1em;
@@ -162,11 +183,21 @@ pre {
   background-color: #902f2f;
 }
 
+/* Utilities */
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.margin-reset {
+  margin: 0;
+}
+
 /* Components */
 ul:not([class]) {
   line-height: 2em;
   list-style-type: none;
-  margin: .5em 0 0;
+  margin: 0 0 1.5em;
   padding-left: 1em;
 }
 ul:not([class]) li:before {
@@ -179,6 +210,13 @@ ul:not([class]) li:before {
   height: 8px;
   margin-right: 8px;
   margin-left: -16px;
+}
+
+.pie-chart h2 {
+  font-size: 1em;
+}
+.pie-chart cite {
+  padding-bottom: .1em !important;
 }
 
 /* Header */

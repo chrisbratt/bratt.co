@@ -67,17 +67,19 @@ We discovered early on that Wish List was used by a small percentage of users, h
 
 ### Customer feedback
 
-We gathered feedback that had been submitted by customers regarding Wish List and categorised the comments. 54% were about the disappearance of Wish List, 27% were feature ideas, 19% were defects/usability issues.
+We gathered feedback that had been submitted by customers regarding Wish List and categorised the comments. **54% were about the disappearance of Wish List**, 27% were feature ideas, 19% were defects/usability issues.
 
-"I had stored a number of wish lists with various ideas as we undertake a large building project."
+<style>.pie-chart{background:radial-gradient(circle closest-side,#fff 0,#fff 32%,transparent 32%,transparent 80%,#fff 0),conic-gradient(#4e79a7 0,#4e79a7 49.4%,#f28e2c 0,#f28e2c 79.3%,#e15759 0,#e15759 100%);position:relative;width:500px;min-height:350px;margin:0;outline:1px solid #ccc}.pie-chart h2{position:absolute;margin:1rem}.pie-chart cite{position:absolute;bottom:0;font-size:80%;padding:1rem;color:gray}.pie-chart figcaption{position:absolute;bottom:1em;right:1em;font-size:smaller;text-align:right}.pie-chart span:after{display:inline-block;content:"";width:.8em;height:.8em;margin-left:.4em;height:.8em;border-radius:.2em;background:currentColor}</style><figure class="pie-chart"><h2>Customer feedback about Wish List</h2><figcaption>Disappearance 38<span style="color:#4e79a7"></span><br>Feature idea 23<span style="color:#f28e2c"></span><br>Bugs / Errors 16<span style="color:#e15759"></span></figcaption><cite>Source: edigitalsurvey</cite></figure>
 
-"I was shopping and wanted to put items into my wish list and it wasn’t there. One of the best features was wish list. Please don't get rid of it!"
+> I had stored a number of wish lists with various ideas as we undertake a large building project.
 
-"I can’t find a wish list option which is annoying given the time of year!"
+> I was shopping and wanted to put items into my wish list and it wasn’t there. One of the best features was wish list. Please don't get rid of it!
 
-"Where is my wish list? I like to browse and put things by for further discussion with household. Very annoying."
+> I can’t find a wish list option which is annoying given the time of year!
 
-"What the f*** have you done? I use the wish list for work!"
+> Where is my wish list? I like to browse and put things by for further discussion with household. Very annoying.
+
+> What the f*** have you done? I use the wish list for work!
 
 ### Weekly goals
 
