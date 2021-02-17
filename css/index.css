@@ -439,6 +439,10 @@ main {
   html {
     font-size: 1.2em;
   }
+  main,
+  header#masthead {
+    padding: 0 32px;
+  }
   .brattco-post .post-banner-container {
     height: 480px;
   }
