@@ -328,7 +328,7 @@ ul.postlist li.postlist-item-card .postlist-item-content .postlist-item-tags {
   justify-content: center;
   align-items: center;
   background: var(--color-darkgrey);
-  margin: 0 -1em;
+  margin: 0 -16px;
 }
 .brattco-post .post-banner-container img {
   opacity: 0.2;
@@ -445,6 +445,7 @@ main {
   }
   .brattco-post .post-banner-container {
     height: 480px;
+    margin: 0 -32px;
   }
   .brattco-post .container figure img {
     margin-left: -20%;
