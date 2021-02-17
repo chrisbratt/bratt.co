@@ -58,36 +58,38 @@ Over the course of four months more items were added, as long as the team believ
 
 ### The structure
 
-* Basics
-  * Buttons
-  * Colour palette
-  * Forms
-  * Images
-  * Lists
-  * Tables
-  * Typography
-* Components
-  * Accordion
-  * Alerts
-  * Breadcrumbs
-  * Health badges
-  * Icons
-  * Navigation
-  * Page sections
-  * Pagination
-  * Panels
-  * Progress
-  * Ribbons
-  * Sashes
-  * Stickers
-  * Tooltips
-* Examples
-  * Article page
-  * Drop down menu
-  * Feature page
-  * Off screen menu
-  * Product tiles full width
-  * Product tiles with nav
+#### Basics
+* Buttons
+* Colour palette
+* Forms
+* Images
+* Lists
+* Tables
+* Typography
+
+#### Components
+* Accordion
+* Alerts
+* Breadcrumbs
+* Health badges
+* Icons
+* Navigation
+* Page sections
+* Pagination
+* Panels
+* Progress
+* Ribbons
+* Sashes
+* Stickers
+* Tooltips
+
+#### Examples
+* Article page
+* Drop down menu
+* Feature page
+* Off screen menu
+* Product tiles full width
+* Product tiles with nav
 
 ## The outcome
 
