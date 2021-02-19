@@ -462,11 +462,10 @@ main {
 @media screen and (min-width: 960px) {
   body,
   html {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
-  h1,
-  h1.bump {
-    font-size: 4vw;
+  h1 {
+    font-size: 1.9em;
   }
   main,
   header#masthead,
