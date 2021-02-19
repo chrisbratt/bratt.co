@@ -44,7 +44,7 @@ h3 {
   font-family: var(--font-heading);
   font-weight: 400;
   line-height: 1.6em;
-  max-width: 20em;
+  max-width: 24em;
 }
 h1 {
   font-size: 1.5em;
@@ -459,10 +459,14 @@ main {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 960px) {
   body,
   html {
     font-size: 1.2em;
+  }
+  h1,
+  h1.bump {
+    font-size: 4vw;
   }
   main,
   header#masthead,
