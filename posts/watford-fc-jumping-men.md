@@ -1,6 +1,6 @@
 ---
 title: "Watford FC Jumping Men"
-description: "Digital recreation of Watford FC scoreboard animation from the 1980/'s"
+description: "Digital recreation of Watford FC scoreboard animation from the 1980's"
 date: 2016-12-05
 tags: ['Video']
 layout: layouts/post.njk
