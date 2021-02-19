@@ -11,9 +11,7 @@ templateClass: brattco-post
     <p class="margin-reset small post-tags">
       {% set comma = joiner() %}
       {% for tag in tags -%}
-        {% if tag !== 'posts' %}
-          {{ comma() }} <span class="tag">{{ tag }}</span>
-        {% endif %}
+        {% if tag !== 'posts' %}{{ comma() }} <span class="tag">{{ tag }}</span>{% endif %}
       {%- endfor %}
     </p>
   </div>
