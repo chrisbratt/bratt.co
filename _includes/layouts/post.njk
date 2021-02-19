@@ -7,13 +7,20 @@ templateClass: brattco-post
   <div class="post-banner-content" id="work-banner-title">
     <h1 class="bump margin-reset">{{ title }}</h1>
     <p class="bump margin-reset">{{ description }}</p>
-    <p class="margin-reset small post-tags">{{ tags }}</p>
+    {{ tags_display }}
+    <p class="margin-reset small post-tags">
+      {% set comma = joiner() %}
+      {% for tag in tags -%}
+        {% if tag !== 'posts' %}
+          {{ comma() }} <span class="tag">{{ tag }}</span>
+        {% endif %}
+      {%- endfor %}
+    </p>
   </div>
 </div>
 
 <div class="container page-content" id="work-content">
   {{ content | safe }}
-
   <ul>
     {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
     {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
