@@ -1,13 +1,13 @@
 ---
 title: "Coded prototype using localStorage"
 description: "Using localStorage to enhance coded prototypes"
-date: 2000-02-02
+date: 2021-02-02
 tags: ['Usability testing', 'Prototyping']
 layout: layouts/post.njk
 feature_image: coded-prototype-feature.jpg
 banner_image: coded-prototype-banner.jpg
 theme_color: ""
-draft: "y"
+eleventyExcludeFromCollections: true
 ---
 ## Why coded prototypes?
 
