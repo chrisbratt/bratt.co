@@ -295,6 +295,7 @@ ul.postlist {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 32px;
+  margin-bottom: 32px;
 }
 ul.postlist li.postlist-item-card {
   background: #fff;
