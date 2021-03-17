@@ -299,7 +299,6 @@ ul.postlist {
 ul.postlist li.postlist-item-card {
   background: #fff;
   display: flex;
-  margin: 0 1em 2em 1em;
   overflow: hidden;
   -webkit-transition: all .5s;
   transition: all .5s;
