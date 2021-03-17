@@ -491,10 +491,16 @@ main {
   }
   .brattco-post .container figure img {
     margin-left: -31.25%;
-    max-width: 1300px;
-    width: 162.5%;
+    max-width: 960px;
+    width: 120%;
   }
   ul.postlist {
     grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+    max-width: 1300px;
+    width: 162.5%;
   }
 }
