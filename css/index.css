@@ -495,7 +495,8 @@ main {
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
+  body,
+  html {
     color: #eee;
     background: #121212;
   }
