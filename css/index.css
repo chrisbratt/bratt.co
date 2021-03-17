@@ -294,9 +294,7 @@ footer div div {
 ul.postlist {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  list-style: none;
-  margin-left: -1em;
-  margin-right: -1em;
+  gap: 16px;
 }
 ul.postlist li.postlist-item-card {
   background: #fff;
