@@ -493,3 +493,14 @@ main {
     width: 162.5%;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background: #121212;
+  }
+
+  body a {
+    color: #809fff;
+  }
+}
