@@ -25,6 +25,10 @@ body {
   margin: 0;
   padding: 0;
 }
+body.dark-theme {
+  --text-color: #eee;
+  --bkg-color: #121212;
+}
 p {
   padding: 0;
   margin: 0 0 1.5em;
