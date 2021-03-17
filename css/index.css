@@ -201,22 +201,11 @@ blockquote p:after {
 }
 
 /* Components */
-ul:not([class]) {
-  line-height: 2em;
-  list-style-type: none;
-  margin: 0 0 1.5em;
-  padding-left: 1em;
+ul:not([class]) li {
+  padding-left: 8px;
 }
-ul:not([class]) li:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: -.25em;
-  background-color: #000;
-  width: 8px;
-  height: 8px;
-  margin-right: 8px;
-  margin-left: -16px;
+ul:not([class]) li::marker {
+  content: "◼";
 }
 
 .pie-chart {
