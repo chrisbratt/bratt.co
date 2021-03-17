@@ -303,6 +303,9 @@ ul.postlist li.postlist-item-card {
   -webkit-transition: all .5s;
   transition: all .5s;
 }
+ul.postlist li.postlist-item-card:hover {
+  transform: scale(1.05);
+}
 ul.postlist li.postlist-item-card a {
   background: var(--color-white);
   color: initial;
