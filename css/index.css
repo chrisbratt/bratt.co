@@ -27,10 +27,6 @@ body {
   background-color: var(--color-tint);
   color: var(--color-darkgrey);
 }
-body.dark-theme {
-  color: #eee;
-  background-color: #121212;
-}
 p {
   padding: 0;
   margin: 0 0 1.5em;
@@ -500,6 +496,7 @@ main {
   }
 }
 
+/*
 @media (prefers-color-scheme: dark) {
   body {
     color: #eee;
@@ -510,3 +507,5 @@ main {
     color: #809fff;
   }
 }
+*/
+
