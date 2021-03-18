@@ -16,8 +16,6 @@
 }
 html,
 body {
-  background-color: var(--color-tint);
-  color: var(--color-darkgrey);
   font-family: var(--font-base);
   font-size: 16px;
   font-weight: 400;
@@ -25,9 +23,13 @@ body {
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: var(--color-tint);
+  color: var(--color-darkgrey);
+}
 body.dark-theme {
-  --text-color: #eee;
-  --bkg-color: #121212;
+  color: #eee;
+  background-color: #121212;
 }
 p {
   padding: 0;
@@ -499,8 +501,7 @@ main {
 }
 
 @media (prefers-color-scheme: dark) {
-  body,
-  html {
+  body {
     color: #eee;
     background: #121212;
   }
