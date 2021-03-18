@@ -14,18 +14,15 @@
 * {
   box-sizing: border-box;
 }
-html,
 body {
+  background-color: var(--color-tint);
+  color: var(--color-darkgrey);
   font-family: var(--font-base);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6em;
   margin: 0;
   padding: 0;
-}
-body {
-  background-color: var(--color-tint);
-  color: var(--color-darkgrey);
 }
 p {
   padding: 0;
@@ -495,17 +492,4 @@ main {
     width: 162.5%;
   }
 }
-
-/*
-@media (prefers-color-scheme: dark) {
-  body {
-    color: #eee;
-    background: #121212;
-  }
-
-  body a {
-    color: #809fff;
-  }
-}
-*/
 
