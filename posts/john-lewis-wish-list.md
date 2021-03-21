@@ -4,7 +4,7 @@ description: "A responsive wish list for johnlewis.com"
 date: 2018-05-17
 tags: ['UX Design', 'UI Design']
 layout: layouts/post.njk
-feature_image: john-lewis-shop-sign.jpg
+feature_image: cover-work-john-lewis-wish-list.jpg
 banner_image: john-lewis-wish-list-1jl-iphone-x.jpg
 theme_color: "#000"
 ---
