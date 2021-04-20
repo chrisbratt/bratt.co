@@ -2,11 +2,12 @@
 title: "Graze.com CSS framework"
 description: "Front end framework and design system for graze.com"
 date: 2017-01-05
-tags: ['UI Design', 'Development']
+tags: ['UI Design', 'Coding']
 layout: layouts/post.njk
 feature_image: portfolio-cover-pistachio.png
 banner_image: portfolio-pistachio-lifestyle.jpg
 theme_color: "#41969C"
+project_url: "//pistachio.graze.com"
 ---
 ## My role
 
@@ -99,4 +100,4 @@ The end product was Pistachio - a living style guide and custom-built CSS front 
 {% imageTest "./img/portfolio-graze-living-styleguide-responsive.jpg", "Screenshots showing Pistachio on desktop and mobile", "1200" %}
 </figure>
 
-<a href="https://pistachio.graze.com">Visit website</a>
+<a href="//pistachio.graze.com">Visit website</a>

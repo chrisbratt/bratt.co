@@ -7,6 +7,7 @@ layout: layouts/post.njk
 feature_image: cover-work-graze-com.jpg
 banner_image: banner-image-graze-com.jpg
 theme_color: ""
+project_url: ""
 ---
 ## The challenge
 

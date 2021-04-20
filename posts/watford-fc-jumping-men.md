@@ -7,6 +7,7 @@ layout: layouts/post.njk
 feature_image: portfolio-cover-jumping-men.png
 banner_image: vicarage-road-stadium.jpg
 theme_color: ""
+project_url: "//player.vimeo.com/video/157342169"
 ---
 ## The challenge
 

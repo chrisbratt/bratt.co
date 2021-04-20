@@ -7,6 +7,7 @@ layout: layouts/post.njk
 feature_image: cover-work-john-lewis-wish-list.jpg
 banner_image: john-lewis-wish-list-1jl-iphone-x.jpg
 theme_color: "#000"
+project_url: "//account.johnlewis.com/wish-list"
 ---
 ## My role
 
