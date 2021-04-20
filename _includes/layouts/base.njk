@@ -23,7 +23,7 @@
     </script>
 
   </head>
-  <body class="">
+  <body>
 
     <header id="masthead">
       <div class="container">
@@ -55,6 +55,11 @@
             <a href="//www.linkedin.com/in/christopherbratt" target="_blank">LinkedIn</a>
           </h2>
         </div>
+        <div class="theme-switch">
+          <p class="small margin-reset">
+            <a href="#0" onclick="theme_switch()">Switch to <span id="theme_readout"></span></a>
+          <p>
+        </div>
         <div class="copyright">
           <p class="margin-reset">
             &copy;<script type="text/javascript">document.write( new Date().getFullYear() );</script> {{ metadata.name }}
@@ -64,21 +69,53 @@
           </p>
         </div>
       </div>
-      <button class="btn-toggle" style="display:none;">Dark Mode</button>
     </footer>
 
   </body>
 
   <script>
-    const btn = document.querySelector(".btn-toggle");
-    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-
-    btn.addEventListener("click", function () {
-      if (prefersDarkScheme.matches) {
-        document.body.classList.toggle("light-theme");
-      } else {
-        document.body.classList.toggle("dark-theme");
+    var theme = 'light';
+    if (localStorage.getItem('theme')) {
+      if (localStorage.getItem('theme') === 'dark') {
+        theme = 'dark';
       }
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      theme = 'dark';
+    }
+
+    var theme;
+    function theme_apply() {
+      'use strict';
+      if (theme === 'light') {
+        document.getElementById('theme_readout').innerHTML = 'Dark Mode';
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      } else {
+        document.getElementById('theme_readout').innerHTML = 'Light Mode';
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+    theme_apply();
+    function theme_switch() {
+      'use strict';
+      if (theme === 'light') {
+        theme = 'dark';
+      } else {
+        theme = 'light';
+      }
+      theme_apply();
+    }
+    var theme_OS = window.matchMedia('(prefers-color-scheme: light)');
+    theme_OS.addEventListener('change', function (e) {
+      'use strict';
+      if (e.matches) {
+        theme = 'light';
+      } else {
+        theme = 'dark';
+      }
+      theme_apply();
     });
   </script>
+
 </html>
