@@ -95,7 +95,7 @@ figure {
 figcaption {
   background-color: rgba(0,0,0,0.8);
   bottom: 0;
-  color: var(--color-white);
+  color: #f2f2f2;
   display: inline-block;
   font-size: .8em;
   line-height: 1em;
