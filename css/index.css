@@ -245,6 +245,7 @@ ul:not([class]) li::marker {
 }
 .pie-chart cite {
   padding-bottom: .5em !important;
+  bottom: 1em !important;
 }
 
 /* Header */
