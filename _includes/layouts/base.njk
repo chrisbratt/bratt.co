@@ -31,7 +31,23 @@
 
     <header id="masthead">
       <div class="container">
-        <a href="{{ '/' | url }}" class="logo">{{ metadata.name }}</a>
+        <div class="logo-container">
+          <a href="{{ '/' | url }}" class="logo">
+            <div id="logo-mark">
+              <svg viewBox="0 0 225 291" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="brand-gradient" x2="0.35" y2="1">
+                    <stop offset="0%" stop-color="var(--color-stop)" />
+                    <stop offset="30%" stop-color="var(--color-stop)" />
+                    <stop offset="100%" stop-color="var(--color-bot)" />
+                  </linearGradient>
+                </defs>
+                <polyline points="133.835092 279.292226 145.424198 290.951628 224.855898 211.877201 158.214827 145.155828 224.855898 78.2408674 146.396821 0 112.715169 33.6440297 157.032843 78.2408674 89.5546518 145.334464 156.310342 211.877201 123.738773 244.429032 24.7229651 145.334464 101.535763 68.5489455 110.986558 78.2408674 43.72132 145.334464 123.738773 224.806396 135.389685 213.011814 67.4864067 145.334464 134.557593 78.2408674 101.535763 44.7576465 0.574440505 145.334464 123.738773 268.307498 180.297484 211.877201 114.262988 145.334464 181.019985 78.2408674 136.219121 33.6440297 146.396821 23.561972 201.2712 78.2408674 134.557593 145.155828 201.2712 211.877201"></polyline>
+              </svg>
+            </div>
+            {{ metadata.name }}
+          </a>
+        </div>
         <nav>
           <ul class="nav">
           {%- for entry in collections.all | eleventyNavigation %}

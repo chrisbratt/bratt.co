@@ -28,8 +28,6 @@
 
 * {
   box-sizing: border-box;
-}
-* {
   transition: background 2s, color .2s;
 }
 body {
@@ -266,29 +264,48 @@ header#masthead:before {
   left: 0;
 }
 
+header#masthead .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 16px;
+  padding-bottom: 12px;
+}
+
 /* Logo */
 .logo {
-  display: inline-block;
   font-family: var(--font-heading);
   color: var(--font-accent);
   background: -webkit-linear-gradient(43deg, #ff2323 0%, #BB5495 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.2em;
-  font-weight: 400;
+  font-size: 1.4em;
   text-decoration: none;
-  line-height: 1.4em;
-  margin: 16px 32px 8px 0;
+  line-height: 1.2em;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+#logo-mark {
+  display: inline-block;
+  height: auto;
+  width: 28px;
+  fill: url(#brand-gradient);
+  margin-right: 16px;
+}
+#brand-gradient {
+  --color-stop: #ff2323;
+  --color-bot: #BB5495;
 }
 
 /* Nav */
-nav {
-  display: inline-block;
-}
 nav ul.nav {
   list-style: none;
-  margin: 0 -16px 8px;
+  margin: 0;
   padding: 0;
+  margin-left: -16px;
 }
 nav ul.nav .nav-item {
   display: inline-block;
@@ -331,7 +348,6 @@ ul.postlist {
 }
 ul.postlist li.postlist-item-card {
   display: flex;
-  overflow: hidden;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
