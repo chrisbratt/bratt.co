@@ -273,6 +273,9 @@ header#masthead .container {
 }
 
 /* Logo */
+.logo-container {
+  display: inline-block;
+}
 .logo {
   font-family: var(--font-heading);
   color: var(--font-accent);
