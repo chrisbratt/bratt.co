@@ -29,6 +29,9 @@
 * {
   box-sizing: border-box;
 }
+* {
+  transition: background 2s, color .2s;
+}
 body {
   background: var(--color-tint);
   color: var(--color-darkgrey);
