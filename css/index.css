@@ -7,9 +7,9 @@
   --color-black: #000;
   --color-grey: #777;
   --color-lightgrey: #DDD;
-  --color-darkgrey: #222;
+  --color-darkgrey: #333;
   --color-tint: #f1f1f1;
-  --color-accent: #b55e95;
+  --color-accent: #BB5495;
 }
 
 [data-theme="dark"] {
@@ -17,7 +17,7 @@
   --color-black: #fff;
   --color-lightgrey: #222;
   --color-darkgrey: #DDD;
-  --color-tint: #222;
+  --color-tint: #0A0A0A;
 }
 
 * {
@@ -25,7 +25,7 @@
 }
 body {
   background: var(--color-tint);
-  color: var(--color-black);
+  color: var(--color-darkgrey);
   font-family: var(--font-base);
   font-size: 16px;
   font-weight: 300;
@@ -33,54 +33,54 @@ body {
   margin: 0;
   padding: 0;
 }
+[data-theme="dark"] body {
+  background: #000;
+}
 p {
-  margin: 0 0 1.5em;
+  margin: 0 0 2em;
   max-width: 35em;
   padding: 0;
 }
 p.bump {
   font-size: 1.4em;
-  line-height: 1.6em;
+  line-height: 1.4em;
 }
 p.small {
   font-size: .8em;
 }
 h1,
 h2,
-h3 {
-  color: var(--color-darkgrey);
+h3,
+h4 {
+  color: var(--color-black);
   font-family: var(--font-heading);
   font-weight: 400;
-  line-height: 1.4em;
+  line-height: 1.2em;
+  margin: 0 0 1.4rem;
   max-width: 16em;
 }
 h1 {
   font-size: 1.8em;
-  margin: 0 0 1.5em;
 }
 h1.bump {
   font-size: 2.2em;
 }
 h2 {
   font-size: 1.4em;
-  margin: 0 0 1em;
 }
 h3 {
   font-size: 1em;
-  margin: 0 0 1em;
 }
 h4 {
   font-size: 1em;
   font-weight: bold;
   padding-bottom: 0;
-  margin: 0 0 .8em;
 }
 h5,
 cite,
 small {
   font-size: .8em;
   color: var(--color-grey);
-  margin: 0 0 .5em;
 }
 img {
   height: auto;
@@ -92,7 +92,7 @@ picture {
 }
 figure {
   line-height: 0;
-  margin: 0 0 1.5em;
+  margin: 0 0 2em;
   position: relative;
 }
 figcaption {
@@ -155,10 +155,11 @@ blockquote p {
 }
 blockquote p:before,
 blockquote p:after {
-  color: var(--color-lightgrey);
+  color: #777;
   font-size: 3em;
   font-style: normal;
   line-height: 1em;
+  opacity: .6;
   position: absolute;
 }
 blockquote p:before {
@@ -238,7 +239,7 @@ header#masthead:before {
   position: absolute;
   width: 100%;
   height: 4px;
-  background: -webkit-linear-gradient(43deg, #b55e95 0%, #ff2323 100%);
+  background: -webkit-linear-gradient(43deg, #BB5495 0%, #ff2323 100%);
   top: -4px;
   left: 0;
 }
@@ -248,7 +249,7 @@ header#masthead:before {
   display: inline-block;
   font-family: var(--font-heading);
   color: var(--font-accent);
-  background: -webkit-linear-gradient(43deg, #ff2323 0%, #b55e95 100%);
+  background: -webkit-linear-gradient(43deg, #ff2323 0%, #BB5495 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.2em;
@@ -302,8 +303,8 @@ footer div div {
 ul.postlist {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 32px;
-  margin-bottom: 32px;
+  gap: 24px;
+  margin-bottom: 24px;
 }
 ul.postlist li.postlist-item-card {
   display: flex;
@@ -319,9 +320,12 @@ ul.postlist li.postlist-item-card a {
   color: inherit;
   display: flex;
   flex: auto;
-  font-weight: initial;
+  font-weight: 300;
   text-decoration: none;
   padding-bottom: 1em;
+}
+[data-theme="dark"] ul.postlist li.postlist-item-card a {
+  background: #333;
 }
 ul.postlist li.postlist-item-card .postlist-item-content {
   display: flex;
@@ -476,7 +480,6 @@ main {
   h1 {
     font-size: 1.9em;
   }
-
   main,
   header#masthead,
   footer {
@@ -516,7 +519,11 @@ main {
     font-size: 3em;
   }
   .container {
-    max-width: 1300px;
+    max-width: 1140px;
     width: 162.5%;
+  }
+  ul.postlist {
+    gap: 48px;
+    margin-bottom: 48px;
   }
 }
