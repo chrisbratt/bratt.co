@@ -279,14 +279,6 @@ a.logo {
   margin-right: 40px;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-family: var(--font-heading);
-  color: var(--font-accent);
-  background: -webkit-linear-gradient(43deg, #ff2323 0%, #BB5495 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 1.4em;
-  text-decoration: none !important;
-  line-height: 1.2em;
 }
 #logo-mark {
   height: 38px;
@@ -297,6 +289,16 @@ a.logo {
 #brand-gradient {
   --color-stop: #ff2323;
   --color-bot: #BB5495;
+}
+a.logo span {
+  font-family: var(--font-heading);
+  color: var(--font-accent);
+  background: -webkit-linear-gradient(43deg, #ff2323 0%, #BB5495 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.4em;
+  text-decoration: none;
+  line-height: 1.2em;
 }
 
 /* Nav */
