@@ -26,10 +26,10 @@
       if (localStorage.theme) document.documentElement.setAttribute("data-theme", localStorage.theme);
     </script>
 
-    <meta name="twitter:card" content="{{cardType}}" />
-    <meta name="twitter:creator" content={{site.authorTwitterUrl}} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content={{metadata.author.twitter}} />
     <meta property="og:url" content="{{site.url}}{{page.url}}" />
-    <meta property="og:title" content="{{title}}" />
+    <meta property="og:title" content="{% if title %}{{title}}{% else %}{{metadata.title}}{% endif %}" />
     <meta property="og:description" content="{% if excerpt %}{{excerpt}}{% else %}{{site.summary}}{% endif %}" />
     <meta name="twitter:image" content="/img/{{feature_image}}" />
     <meta property="og:image" content="/img/{{feature_image}}" />
