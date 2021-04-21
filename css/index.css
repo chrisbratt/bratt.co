@@ -7,7 +7,7 @@
   --color-black: #000;
   --color-grey: #777;
   --color-lightgrey: #DDD;
-  --color-darkgrey: #333;
+  --color-darkgrey: #323232;
   --color-tint: #f1f1f1;
   --color-accent: #BB5495;
   --color-brand: #ff2323;
@@ -16,9 +16,9 @@
 [data-theme="dark"] {
   --color-white: #000;
   --color-black: #fff;
-  --color-lightgrey: #333;
+  --color-lightgrey: #323232;
   --color-darkgrey: #DDD;
-  --color-tint: #0A0A0A;
+  --color-tint: #1C1C1C;
 }
 
 [data-theme="dark"] img,
@@ -38,9 +38,6 @@ body {
   line-height: 1.6em;
   margin: 0;
   padding: 0;
-}
-[data-theme="dark"] body {
-  background: #000;
 }
 p {
   margin: 0 0 2em;
@@ -256,10 +253,6 @@ header#masthead {
   position: relative;
 }
 
-[data-theme="dark"] header#masthead {
-  background-color: #2E2E2E;
-}
-
 header#masthead:before {
   content: '';
   position: absolute;
@@ -352,7 +345,7 @@ ul.postlist li.postlist-item-card a {
   padding-bottom: 1em;
 }
 [data-theme="dark"] ul.postlist li.postlist-item-card a {
-  background: #333;
+  background: #323232;
 }
 ul.postlist li.postlist-item-card .postlist-item-content {
   display: flex;
@@ -391,7 +384,7 @@ ul.postlist li.postlist-item-card .postlist-item-content .postlist-item-tags {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #333;
+  background: #323232;
   margin: 0 -16px;
 }
 .brattco-post .post-banner-container img {
