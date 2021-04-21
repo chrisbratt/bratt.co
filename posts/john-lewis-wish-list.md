@@ -1,6 +1,7 @@
 ---
 title: "John Lewis Wish List"
 description: "A responsive wish list for johnlewis.com"
+excerpt: "John Lewis were in the process of launching a new mobile-first, responsive website and were beginning to direct customers to the new website. The new website didn't have Wish List functionality."
 date: 2018-05-17
 tags: ['UX Design', 'UI Design']
 layout: layouts/post.njk
