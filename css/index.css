@@ -241,7 +241,7 @@ ul:not([class]) li::marker {
 }
 .pie-chart h2 {
   font-size: .8em !important;
-  color: var(--color-white);
+  color: black;
 }
 .pie-chart cite {
   padding-bottom: .5em !important;
