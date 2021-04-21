@@ -116,14 +116,13 @@ a[href]:not([class]) {
   -webkit-text-fill-color: transparent;
   background-size: 100%;
   font-weight: 500;
-  transition: all .8s;
-  text-decoration: none;
+  transition: all 1s;
+  border-bottom: 2px solid;
 }
 a[href]:not([class]):hover {
   color: var(--color-brand);
   background-size: 200%;
   background-position: -100%;
-  display: inline-block;
 }
 
 header:after {
