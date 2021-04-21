@@ -394,7 +394,7 @@ ul.postlist li.postlist-item-card .postlist-item-content .postlist-item-tags {
   margin: 0 -16px;
 }
 .brattco-post .post-banner-container img {
-  filter: brightness(20%);
+  filter: brightness(40%);
   left: -23%;
   opacity: 0.8;
   min-height: 110%;
