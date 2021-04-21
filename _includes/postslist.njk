@@ -1,7 +1,7 @@
 <ul reversed class="list-reset postlist">
 {% for post in postslist | reverse %}
   <li class="postlist-item-card">
-    <a href="{{ post.url | url }}">
+    <a href="{{ post.url | url }}" class="postlist-item-card-link">
       <div class="postlist-item-content">
         {% if post.data.feature_image %}<img src="../img/{{ post.data.feature_image }}" alt="{% if post.data.title %}{{ post.data.title }}{% endif %}">{% endif %}
         <div class="postlist-item-title">
