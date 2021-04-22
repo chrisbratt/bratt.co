@@ -1,7 +1,7 @@
 ---
 title: "graze.com"
 description: "A redesign of the entire online experience for graze.com"
-date: 2017-01-05
+date: 2017-09-15
 tags: ['UX Design', 'UI Design']
 layout: layouts/post.njk
 feature_image: cover-work-graze-com.jpg
