@@ -31,8 +31,8 @@
     <meta property="og:url" content="{{site.url}}{{page.url}}" />
     <meta property="og:title" content="{% if title %}{{title}}{% else %}{{metadata.title}}{% endif %}" />
     <meta property="og:description" content="{% if excerpt %}{{excerpt}}{% else %}{{site.summary}}{% endif %}" />
-    <meta name="twitter:image" content="/img/{{feature_image}}" />
-    <meta property="og:image" content="/img/{{feature_image}}" />
+    <meta name="twitter:image" content="{% if feature_image %}/img/{{feature_image}}{% else %}/img/feature-image.png{% endif %}" />
+    <meta property="og:image" content="{% if feature_image %}/img/{{feature_image}}{% else %}/img/feature-image.png{% endif %}" />
 
   </head>
   <body>
