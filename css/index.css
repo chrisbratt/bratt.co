@@ -118,6 +118,7 @@ a[href]:not([class]) {
   font-weight: 500;
   transition: all 1s;
   border-bottom: 2px solid;
+  display: inline;
 }
 a[href]:not([class]):hover {
   color: var(--color-brand);
