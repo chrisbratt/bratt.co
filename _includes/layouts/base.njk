@@ -29,8 +29,8 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content={{metadata.author.twitter}} />
     <meta property="og:url" content="{{site.url}}{{page.url}}" />
-    <meta property="og:title" content="{% if title %}{{title}}{% else %}{{metadata.title}}{% endif %}" />
-    <meta property="og:description" content="{% if excerpt %}{{excerpt}}{% else %}{{site.summary}}{% endif %}" />
+    <meta property="og:title" content="{{ metadata.title }} {% if title %} — {{title}}{% else %}{% endif %}" />
+    <meta property="og:description" content="{% if excerpt %}{{excerpt}}{% else %}{{ metadata.description }}{% endif %}" />
     <meta name="twitter:image" content="{% if feature_image %}/img/{{feature_image}}{% else %}/img/feature-image.png{% endif %}" />
     <meta property="og:image" content="{% if feature_image %}/img/{{feature_image}}{% else %}/img/feature-image.png{% endif %}" />
 
