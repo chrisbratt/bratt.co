@@ -227,11 +227,19 @@ blockquote p:after {
 }
 
 /* Components */
+ul:not([class]) {
+  margin-top: 0;
+  margin-bottom: 32px;
+  padding-inline-start: 16px;
+  padding-right: 32px;
+}
 ul:not([class]) li {
   padding-left: 8px;
+  padding-right: 16px;
 }
 ul:not([class]) li::marker {
   content: "◼";
+  font-size: 16px;
 }
 
 .pie-chart {
@@ -500,6 +508,17 @@ main {
 }
 .page-content {
   padding-top: 40px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 @media screen and (min-width: 480px) {
