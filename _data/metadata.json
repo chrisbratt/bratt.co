@@ -1,13 +1,13 @@
 {
   "title": "Chris Bratt UI/UX Designer",
   "name": "Chris Bratt",
-  "url": "https://bratt.co/",
+  "url": "https://bratt.co",
   "description": "Design Portfolio of Chris Bratt",
   "feed": {
     "subtitle": "Design Portfolio of Chris Bratt",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://bratt.co/"
+    "id": "https://bratt.co"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
@@ -16,7 +16,7 @@
   "author": {
     "name": "Chris Bratt",
     "email": "chris@bratt.co",
-    "url": "https://bratt.co/about/",
+    "url": "https://bratt.co/about",
     "twitter": "@bratt_co"
   }
 }
