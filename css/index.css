@@ -307,7 +307,8 @@ a.logo span {
   -webkit-text-fill-color: transparent;
   font-size: 1.4em;
   text-decoration: none;
-  line-height: 1.2em;
+  line-height: 1;
+  margin-top: -2px;
 }
 
 /* Nav */
@@ -316,6 +317,7 @@ nav ul.nav {
   margin: 0;
   padding: 0;
   margin-left: -16px;
+  line-height: 1;
 }
 nav ul.nav .nav-item {
   display: inline-block;
