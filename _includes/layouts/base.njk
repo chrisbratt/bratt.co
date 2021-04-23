@@ -31,12 +31,12 @@
     <meta name="twitter:creator" content="{{metadata.author.twitter}}" />
     <meta name="twitter:title" content="{{ metadata.title }} {% if title %} — {{title}}{% else %}{% endif %}">
     <meta name="twitter:image" itemprop="image" content="https://bratt.co/img/{% if feature_image %}{{feature_image}}{% else %}feature-image.png{% endif %}" />
-    <meta property="og:url" content="{{ metadata.url }}{{page.url}}" />
-    <meta property="og:title" content="{{ metadata.title }} {% if title %} — {{title}}{% else %}{% endif %}" />
-    <meta property="og:description" content="{% if excerpt %}{{excerpt}}{% else %}Design portfolio of Chris Bratt{% endif %}" />
-    <meta property="og:image" itemprop="image" content="http://bratt.co/img/{% if feature_image %}{{feature_image}}{% else %}feature-image.png{% endif %}" />
-    <meta property="og:image:secure_url" itemprop="image" content="https://bratt.co/img/{% if feature_image %}{{feature_image}}{% else %}feature-image.png{% endif %}" />
-    <meta property="og:type" content="website" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:url" content="{{ metadata.url }}{{page.url}}" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="{{ metadata.title }} {% if title %} — {{title}}{% else %}{% endif %}" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:description" content="{% if excerpt %}{{excerpt}}{% else %}Design portfolio of Chris Bratt{% endif %}" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" itemprop="image" content="http://bratt.co/img/{% if feature_image %}{{feature_image}}{% else %}feature-image.png{% endif %}" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:image:secure_url" itemprop="image" content="https://bratt.co/img/{% if feature_image %}{{feature_image}}{% else %}feature-image.png{% endif %}" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
   </head>
   <body>
 
