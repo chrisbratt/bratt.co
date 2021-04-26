@@ -41,7 +41,7 @@ body {
   padding: 0;
 }
 p {
-  margin: 0 0 2em;
+  margin: 0 0 1.6em;
   max-width: 35em;
   padding: 0;
 }
@@ -509,7 +509,7 @@ main {
   margin: 0 auto;
 }
 .page-content {
-  padding-top: 40px;
+  padding-top: 3.6em;
 }
 
 .row {
