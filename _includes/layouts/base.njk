@@ -26,17 +26,25 @@
       if (localStorage.theme) document.documentElement.setAttribute("data-theme", localStorage.theme);
     </script>
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="{{metadata.author.twitter}}" />
-    <meta name="twitter:creator" content="{{metadata.author.twitter}}" />
-    <meta name="twitter:title" content="{{ metadata.title }} {% if title %} — {{title}}{% else %}{% endif %}">
-    <meta name="twitter:image" itemprop="image" content="https://bratt.co/img/{% if feature_image %}{{feature_image}}{% else %}feature-image.png{% endif %}" />
-    <meta prefix="og: http://ogp.me/ns#" property="og:url" content="{{ metadata.url }}{{page.url}}" />
-    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="{{ metadata.title }} {% if title %} — {{title}}{% else %}{% endif %}" />
-    <meta prefix="og: http://ogp.me/ns#" property="og:description" content="{% if excerpt %}{{excerpt}}{% else %}Design portfolio of Chris Bratt{% endif %}" />
-    <meta prefix="og: http://ogp.me/ns#" property="og:image" itemprop="image" content="http://bratt.co/img/{% if feature_image %}{{feature_image}}{% else %}feature-image.png{% endif %}" />
-    <meta prefix="og: http://ogp.me/ns#" property="og:image:secure_url" itemprop="image" content="https://bratt.co/img/{% if feature_image %}{{feature_image}}{% else %}feature-image.png{% endif %}" />
-    <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
+    <!-- Primary Meta Tags -->
+    <title>Chris Bratt Portfolio — Product Design (UX/UI)</title>
+    <meta name="title" content="Chris Bratt Portfolio — Product Design (UX/UI)">
+    <meta name="description" content="Design Portfolio of London based Product Designer, Chris Bratt">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bratt.co/">
+    <meta property="og:title" content="Chris Bratt Portfolio — Product Design (UX/UI)">
+    <meta property="og:description" content="Design Portfolio of London based Product Designer, Chris Bratt">
+    <meta property="og:image" content="http://bratt.co/img/feature-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bratt.co/">
+    <meta property="twitter:title" content="Chris Bratt Portfolio — Product Design (UX/UI)">
+    <meta property="twitter:description" content="Design Portfolio of London based Product Designer, Chris Bratt">
+    <meta property="twitter:image" content="http://bratt.co/img/feature-image.png">
+
   </head>
   <body>
 
